@@ -1,0 +1,12 @@
+:host {
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.info {
+  display: inline-flex;
+  flex: row nowrap;
+  align-items: stretch;
+  height: 20px;
+  flex-shrink: 2;
+}

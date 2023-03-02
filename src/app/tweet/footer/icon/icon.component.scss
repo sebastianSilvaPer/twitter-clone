@@ -1,0 +1,44 @@
+:host {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  &:hover {
+    cursor: pointer;
+
+    .circle{
+      background: rgba(29, 155, 240, 20%);
+    }
+    svg {
+      background: transparent;
+      fill: rgba(29, 155, 240, 100%);
+    }
+    span {
+      color: rgba(29, 155, 240, 100%);
+    }
+  }
+}
+
+svg {
+  background-color: inherit;
+  fill: #747577;
+}
+
+span {
+  padding-left: 8px;
+  align-self: center;
+  color: #747577;
+  font-size: 13px;
+}
+
+
+.circle{
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  padding: 10px;
+
+ }
+
+
+//  .circle:hover {
+//   background: green;
+//   }
