@@ -1,6 +1,9 @@
 <div class="info">
-  <app-name></app-name>
-  <app-account-name></app-account-name>
+  <app-name [name]="tweet.profileName"></app-name>
+  <app-account-name [accountName]="tweet.profileAccountName"></app-account-name>
+  <app-point></app-point>
+  <app-time [time]="tweet.time"></app-time>
 </div>
-<div class="menu" style="color: white;">...</div>
-
+<div class="menu">
+  <app-options></app-options>
+</div>

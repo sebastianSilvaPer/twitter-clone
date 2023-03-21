@@ -1,17 +1,16 @@
 <div class="tweet">
-  <app-photo></app-photo>
+  <app-photo [url]="tweet.profileImage"></app-photo>
   <div class="content">
-    <app-info></app-info>
+    <app-info [tweet]="tweet"></app-info>
     <div class="tweet-content">
-      <app-content-text></app-content-text>
-      <div class="attachments"></div>
-    </div>
-    <div class="footer">
-      <div class="items">
-        <app-icon></app-icon>
-        <app-icon></app-icon>
-        <app-icon></app-icon>
-        <app-icon></app-icon>
+      <app-content-text [value]="tweet.text"></app-content-text>
+      <app-attachments [imgList]="tweet.attachments"></app-attachments>
+      <div class="footer">
+        <div class="items">
+          <div *ngFor="let icon of icons; let i = index">
+            <app-icon  [icon]="icon" [value]="getNumberValue(i)"></app-icon>
+          </div>
+        </div>
       </div>
     </div>
   </div>

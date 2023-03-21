@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Tweet } from '../../tweet.model';
 
 @Component({
   selector: 'app-info',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./info.component.scss']
 })
 export class InfoComponent {
-
+  @Input() tweet: Tweet;
 }

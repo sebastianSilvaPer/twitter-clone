@@ -1,0 +1,24 @@
+:host {
+  margin-top: 12px;
+  max-height: 60vh;
+  display: flex;
+  flex-flow: row nowrap;
+  overflow: hidden;
+  border-radius: 10%;
+  border: 2px solid #252525;
+  border-color: #252525;
+}
+
+.column {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.a{
+  width: 100%;
+  max-width: 100%;
+}
+
+img {
+  width: 100%;
+}

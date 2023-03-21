@@ -1,3 +1,4 @@
+import { Input } from '@angular/core';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./account-name.component.scss']
 })
 export class AccountNameComponent {
-
+  @Input() accountName:string;
 }

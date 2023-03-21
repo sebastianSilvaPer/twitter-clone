@@ -8,6 +8,9 @@ import { IconComponent } from './footer/icon/icon.component';
 import { TweetComponent } from './tweet.component';
 import { AttachmentsComponent } from './content/attachments/attachments.component';
 import { ContentTextComponent } from './content/text/text.component';
+import { PointComponent } from './profile/info/point/point.component';
+import { TimeComponent } from './profile/info/time/time.component';
+import { OptionsComponent } from './profile/info/options/options.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { ContentTextComponent } from './content/text/text.component';
     IconComponent,
     TweetComponent,
     AttachmentsComponent,
-    ContentTextComponent
+    ContentTextComponent,
+    PointComponent,
+    TimeComponent,
+    OptionsComponent
   ],
   imports: [
     CommonModule

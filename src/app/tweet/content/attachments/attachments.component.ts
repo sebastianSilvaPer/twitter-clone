@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-attachments',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./attachments.component.scss']
 })
 export class AttachmentsComponent {
-
+  @Input() imgList: string[] = [
+  ];
 }
