@@ -1,0 +1,7 @@
+<div *ngFor="let topic of topics" class="topics">
+  <div class="topic" (click)="foundTopicTimeline(topic)">
+    <h2>Trending in {{ topic.country }}</h2>
+    <h1> {{ topic.topic }} </h1>
+    <h2> {{ topic.quantity }} Tweets</h2>
+  </div>
+</div>

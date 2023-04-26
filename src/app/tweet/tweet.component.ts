@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Tweet } from './tweet.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tweet',
@@ -15,8 +16,7 @@ export class TweetComponent {
     'M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z',
   ];
 
-  constructor() {
-  }
+  constructor(private router: Router) {}
 
   public getNumberValue(index: number) : number{
     let value:number;
@@ -34,5 +34,9 @@ export class TweetComponent {
         break;
     }
     return value;
+  }
+
+  foundThread() {
+    this.router.navigate([`./thread/${this.tweet.id}`]);
   }
 }

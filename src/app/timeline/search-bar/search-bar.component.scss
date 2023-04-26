@@ -1,0 +1,35 @@
+:host {
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #222327;
+  margin: 10px 10px;
+  &:focus-within{
+    background-color: #000000;
+    input {
+      outline: none;
+    }
+    svg {
+      color: #fff;
+    }
+    border: 2px solid rgba(29, 155, 240);
+  }
+}
+
+.icon {
+  margin-right: 10px;
+  background-color: inherit;
+}
+
+input {
+  width: 100%;
+  border: transparent;
+  background-color: inherit;
+  font-size: medium;
+}
+
+form {
+  background-color: transparent;
+  display: flex;
+}
+

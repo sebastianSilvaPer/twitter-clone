@@ -1,1 +1,7 @@
-<p>timeline works!</p>
+<app-search-bar (formValue)="onSearchText($event)"></app-search-bar>
+
+<app-tweet
+  *ngFor="let tweet of tweets"
+  [tweet]="tweet">
+</app-tweet>
+

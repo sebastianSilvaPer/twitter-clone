@@ -1,4 +1,4 @@
-<div class="tweet">
+<div class="tweet" (click)="foundThread()">
   <app-photo [url]="tweet.profileImage"></app-photo>
   <div class="content">
     <app-info [tweet]="tweet"></app-info>
@@ -7,9 +7,11 @@
       <app-attachments [imgList]="tweet.attachments"></app-attachments>
       <div class="footer">
         <div class="items">
-          <div *ngFor="let icon of icons; let i = index">
-            <app-icon  [icon]="icon" [value]="getNumberValue(i)"></app-icon>
-          </div>
+            <app-icon
+              *ngFor="let icon of icons; let i = index"
+              [icon]="icon"
+              [value]="getNumberValue(i)">
+            </app-icon>
         </div>
       </div>
     </div>

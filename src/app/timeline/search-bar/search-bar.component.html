@@ -1,0 +1,16 @@
+<div class="icon">
+  <app-icon
+    [icon]="icon"
+    [activeIcon]="activeIcon"
+  ></app-icon>
+</div>
+<Form [formGroup]="searchForm" (keydown)="searchTweets($event)">
+    <input
+      type="text"
+      placeholder="Buscar en twitter"
+      formControlName="searchText"
+      (focus)="searchFocused()"
+      (blur)="unfocused()" />
+</Form>
+
+

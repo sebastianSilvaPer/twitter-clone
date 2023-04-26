@@ -1,0 +1,19 @@
+.topics {
+  width: 100%;
+}
+
+.topic {
+  padding: 8px 0px 8px 10px;
+  &:hover {
+    cursor: pointer;
+    background-color: rgb(15, 15, 15);
+  }
+}
+
+h1 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+h2 {
+  font-size: 12px;
+}

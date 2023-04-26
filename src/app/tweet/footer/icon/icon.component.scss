@@ -3,6 +3,7 @@ $hover-color: rgba(29, 155, 240);
 :host {
   display: inline-flex;
   flex-flow: row nowrap;
+  background-color: inherit;
   &:hover {
     cursor: pointer;
 
@@ -29,11 +30,17 @@ span {
   align-self: center;
   color: #747577;
   font-size: 13px;
+  background-color: inherit;
 }
 
-.circle{
+.circle {
   border-radius: 50%;
   height: 20px;
   width: 20px;
   padding: 10px;
- }
+  background-color: inherit;
+}
+
+.text {
+  background-color: inherit;
+}

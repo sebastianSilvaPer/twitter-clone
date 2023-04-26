@@ -1,0 +1,27 @@
+:host {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.option {
+  display: flex;
+  flex-flow: row nowrap;
+  border-radius: 40px;
+  &:hover {
+    cursor: pointer;
+    background: rgba(rgb(150, 150, 150), 30%);
+  }
+}
+
+span {
+  text-align: center;
+  align-self: center;
+  margin: 0px 10px 0px 10px;
+  font-size: medium;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+.icon {
+  background-color: transparent;
+}

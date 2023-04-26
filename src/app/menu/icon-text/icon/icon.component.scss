@@ -1,0 +1,30 @@
+:host {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  background-color: inherit;
+}
+
+svg {
+  background-color: inherit;
+  fill: white;
+}
+
+.circle {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  padding: 10px;
+  background-color: inherit;
+}
+
+.circle-hover {
+  @extend .circle;
+  &:hover {
+    cursor: pointer;
+    background: rgba(rgb(150, 150, 150), 20%);
+    svg {
+      background: transparent;
+    }
+  }
+}
+

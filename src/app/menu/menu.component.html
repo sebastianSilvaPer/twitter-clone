@@ -1,0 +1,12 @@
+<app-menu-icon
+  [icon]="iconHome"
+  [circleClass]="'circle-hover'"
+  (click)="changeRoute('')">
+</app-menu-icon>
+<div *ngFor="let option of options">
+    <app-icon-text
+    [option]="option"
+    (click)="changeRoute(option.route)">
+    </app-icon-text>
+</div>
+
